@@ -593,6 +593,126 @@
       .contact-form-wrap { padding: 32px 24px; }
     }
 
+    /* ─── EIGENEMISSION ─────────────────────────────────────── */
+    .ee-section {
+      margin-top: 100px;
+      padding-top: 72px;
+      border-top: 1px solid var(--border);
+    }
+    .ee-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+      margin-bottom: 64px;
+    }
+    .ee-header h3 {
+      font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .ee-header p {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+    .ee-highlight {
+      background: var(--green-tint);
+      border-left: 2px solid var(--green);
+      padding: 18px 22px;
+      margin-top: 24px;
+    }
+    .ee-highlight p {
+      font-size: 14px;
+      color: var(--text-mid);
+      margin: 0;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+    .ee-highlight strong { font-weight: 700; color: var(--text); }
+    .ee-columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+    .ee-col {
+      background: #fff;
+      padding: 36px 32px;
+      transition: background .2s;
+    }
+    .ee-col:hover { background: var(--off-white); }
+    .ee-col-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ee-col-label svg {
+      width: 16px; height: 16px;
+      stroke: var(--green); fill: none; stroke-width: 2;
+    }
+    .ee-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .ee-list li {
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.6;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .ee-list li::before {
+      content: '';
+      display: block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-top: 7px;
+      min-width: 6px;
+    }
+    .ee-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      padding: 36px 40px;
+    }
+    .ee-cta p {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--text-mid);
+      max-width: 620px;
+      line-height: 1.75;
+    }
+    .ee-cta strong { font-weight: 700; color: var(--text); }
+    @media (max-width: 900px) {
+      .ee-header { grid-template-columns: 1fr; gap: 32px; }
+      .ee-columns { grid-template-columns: 1fr; }
+      .ee-cta { flex-direction: column; align-items: flex-start; }
+    }
+
     /* ─── CTA BAND ───────────────────────────────────────────── */
     .cta-band { background: var(--green); padding: 100px 0; }
     .cta-inner { text-align: center; }
@@ -838,6 +958,64 @@
             <p>Strategischer Einsatz von Kapitalmarktinstrumenten, insbesondere im Bereich Debt Capital Markets</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EIGENEMISSION & ALTERNATIVE FINANZIERUNG ─────────── -->
+  <section class="section ee-section" id="eigenemission">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Corporate Finance · Vertiefung</span>
+        <div class="rule rule-center"></div>
+        <h2>Eigenemission &amp; Alternative Finanzierung</h2>
+        <p>Klassische Bankfinanzierungen stoßen zunehmend an ihre Grenzen. Wir erschließen für Ihr Unternehmen den Zugang zum Kapitalmarkt – unabhängig, strukturiert und auf Augenhöhe.</p>
+      </div>
+
+      <div class="ee-header reveal">
+        <p>Regulatorische Anforderungen und veränderte Risikoappetite der Banken machen es für mittelständische Unternehmen und Projektentwickler schwieriger, klassische Fremdfinanzierung in ausreichendem Umfang zu erhalten. Gleichzeitig eröffnen Kapitalmarktinstrumente attraktive Alternativen: flexibel, investorengerecht und unabhängig von einzelnen Kreditgebern.</p>
+      </div>
+
+      <div class="ee-columns reveal">
+        <div class="ee-col">
+          <h3>Vorteile der Eigenemission</h3>
+          <ul class="ee-list">
+            <li>Unabhängigkeit von Banken und deren Kreditvergabekriterien</li>
+            <li>Direkte Ansprache eines breiten Investorenkreises</li>
+            <li>Flexible Konditionengestaltung (Zinssatz, Laufzeit, Besicherung)</li>
+            <li>Stärkung der Eigenkapitalbasis und Bilanzoptimierung</li>
+            <li>Reputationsgewinn durch Kapitalmarkttransparenz</li>
+            <li>Langfristige Investorenbindung und Markenpräsenz</li>
+          </ul>
+        </div>
+        <div class="ee-col">
+          <h3>Geeignet für</h3>
+          <ul class="ee-list">
+            <li>Mittelständische Unternehmen mit Wachstumsambitionen</li>
+            <li>Immobilienprojektentwickler und -bestandshalter</li>
+            <li>Unternehmen in Restrukturierungs- oder Transformationsphasen</li>
+            <li>Betriebe mit stabilen Cashflows und klarem Investitionsplan</li>
+            <li>Unternehmen, die eine Bankfinanzierung ergänzen oder ersetzen möchten</li>
+          </ul>
+        </div>
+        <div class="ee-col">
+          <h3>Was ist eine Eigenemission?</h3>
+          <p style="font-size:15px;color:var(--text-mid);font-weight:300;line-height:1.8;margin-bottom:16px;">Bei einer Eigenemission gibt ein Unternehmen direkt Wertpapiere – typischerweise Unternehmensanleihen oder Schuldverschreibungen – an Investoren aus, ohne den Umweg über eine Bank als Hauptkreditgeber.</p>
+          <p style="font-size:15px;color:var(--text-mid);font-weight:300;line-height:1.8;">Dies ermöglicht maßgeschneiderte Finanzierungsstrukturen und eine breite Diversifikation der Kapitalbasis – ein entscheidender Wettbewerbsvorteil in einem anspruchsvollen Marktumfeld.</p>
+        </div>
+      </div>
+
+      <div class="ee-highlight reveal">
+        <h3>HEOS begleitet Sie von A bis Z</h3>
+        <p>Von der ersten Strukturierungsidee über die rechtliche und regulatorische Umsetzung bis hin zur Investorenansprache und dem Abschluss – HEOS Capital Advisory koordiniert den gesamten Emissionsprozess. Wir arbeiten mit einem etablierten Netzwerk aus Rechtsanwälten, Wirtschaftsprüfern und institutionellen Investoren, um Ihre Emission effizient und erfolgreich zu gestalten.</p>
+      </div>
+
+      <div class="ee-cta reveal">
+        <div>
+          <strong>Bereit, neue Finanzierungswege zu erschließen?</strong>
+          <p style="font-size:14px;color:var(--text-mid);margin-top:6px;">Sprechen Sie uns an – wir analysieren Ihre Situation und entwickeln die passende Lösung.</p>
+        </div>
+        <a href="#kontakt" class="btn btn-solid">Jetzt Beratungsgespräch anfragen</a>
       </div>
     </div>
   </section>
